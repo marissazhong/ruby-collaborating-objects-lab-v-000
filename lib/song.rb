@@ -13,6 +13,7 @@ class Song
     new_song.artist = attributes[0]
     new_song.title = attributes[1]
     new_song.genre = attributes[2]
+    self.all << new_song
     new_song
   end
 
