@@ -13,4 +13,4 @@ class MP3Importer
   end
 end
 
-#dir = MP3Importer.new('./db/mp3s').import
+dir = MP3Importer.new('./db/mp3s').import
