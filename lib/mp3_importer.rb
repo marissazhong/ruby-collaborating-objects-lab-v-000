@@ -9,7 +9,7 @@ class MP3Importer
     @filesnames
   end
   def import
-    @filenames = Dir["#{@path}/*.mp3"].map! {|file| file[@path.length+1..-1]}
+    @filenames = Dir["#{@path}/*.mp3"].map! {|file| file[@path.length+1..-5]}
   end
 end
 
