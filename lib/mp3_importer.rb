@@ -8,6 +8,6 @@ class MP3Importer
     @filesnames
   end
   def self.import
-    Dir[@path]
+    Dir["#{@path}/*"]
   end
 end
