@@ -1,9 +1,9 @@
 class Artist
 
-  @@all = []
+  @@songs = []
 
   def self.all
-    @@all
+    @@songs
   end
 
   def find_by_name(name)
