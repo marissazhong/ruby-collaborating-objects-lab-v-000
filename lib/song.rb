@@ -9,9 +9,8 @@ class Song
   end
   def self.new_by_filename(file_name)
     attributes = file_name[0..-5].split(" - ")
-    new_song = Song.new
+    new_song = Song.new(attributes[1])
     new_song.artist = attributes[0]
-    new_song.title = attributes[1]
     new_song.genre = attributes[2]
     self.all << new_song
     new_song
@@ -24,4 +23,5 @@ class Song
 
 end
 
-puts Song.new_by_filename("Real Estate - Green Aisles - country.mp3")
+new_song = Song.new
+new_by_filename("Real Estate - Green Aisles - country.mp3")
