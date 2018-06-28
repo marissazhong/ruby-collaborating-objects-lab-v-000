@@ -8,11 +8,11 @@ class MP3Importer
   def self.files
     @filesnames
   end
-  def import(path)
+  def import
     puts "#{@path}/*"
     #puts Dir["#{@path}/*"]
   end
 end
 
 dir = MP3Importer.new('./db/mp3s')
-MP3Importer.import(dir)
+dir.import(dir)
