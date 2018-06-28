@@ -14,7 +14,7 @@ class Artist
 #  end
 
   def save
-
+    @@all << self
   end
   def find_by_name(name)
     songs.detect{|song| song.name == name}
