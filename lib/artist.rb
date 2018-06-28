@@ -33,6 +33,6 @@ class Artist
   end
 
   def print_songs
-    self.all.length
+    @@all.length
   end
 end
