@@ -10,8 +10,7 @@ class MP3Importer
   end
   def import
     @filenames = Dir["#{@path}/*.mp3"].map! {|file| file[@path.length+1..-5]}
-    puts @filenames
   end
 end
 
-dir = MP3Importer.new('./db/mp3s').import
+#dir = MP3Importer.new('./db/mp3s').import
