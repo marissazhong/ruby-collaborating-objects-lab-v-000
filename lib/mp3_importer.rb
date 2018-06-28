@@ -8,7 +8,7 @@ class MP3Importer
   def self.files
     @filesnames
   end
-  def self.import
+  def self.import(@path)
     puts self
     puts @path
     puts "#{@path}/*"
