@@ -23,5 +23,4 @@ class Song
 
 end
 
-new_song = Song.new
-new_by_filename("Real Estate - Green Aisles - country.mp3")
+puts Song.new_by_filename("Real Estate - Green Aisles - country.mp3")
