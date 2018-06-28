@@ -5,9 +5,9 @@ class MP3Importer
     @filenames = []
   end
   def self.files
-    
+    @filesnames
   end
   def self.import
-
+    
   end
 end
