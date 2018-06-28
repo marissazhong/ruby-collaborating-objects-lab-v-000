@@ -7,6 +7,7 @@ class MP3Importer
   end
   def files
     @filenames = Dir["#{@path}/*.mp3"].map! {|file| file[@path.length+1..-1]}
+  end
   def import
     files.each {|file_name| Song.new_by_filename(file_name)}
   end
