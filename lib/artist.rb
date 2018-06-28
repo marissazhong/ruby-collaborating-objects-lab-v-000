@@ -19,11 +19,11 @@ class Artist
     self.all << self
   end
 
-  def find_by_name(name)
+  def self.find_by_name(name)
     self.all.detect{|artist| artist.name == name}
   end
 
-  def create_by_name(name)
+  def self.create_by_name(name)
     new_artist = self.new
     new_artist.name = name
     new_artist
