@@ -1,17 +1,20 @@
 class Artist
   attr_accessor :name
-  @@songs = []
+  @@all = []
   def initialize(name)
     @name = name
   end
 
   def songs
-    @@songs
+    @@all
   end
 
-  def self.all
-    @@songs
-  end
+  #def self.all
+#    @@songs
+#  end
+
+  def save
+    @@
 
   def find_by_name(name)
     self.all.detect{|song| song.name == name}
