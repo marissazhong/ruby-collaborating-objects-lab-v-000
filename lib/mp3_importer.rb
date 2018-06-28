@@ -9,8 +9,7 @@ class MP3Importer
     @filesnames
   end
   def import
-    puts "#{@path}/*"
-    #puts Dir["#{@path}/*"]
+    puts Dir["#{@path}/*"]
   end
 end
 
