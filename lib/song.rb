@@ -24,4 +24,4 @@ class Song
 
 end
 
-Song.new_by_filename("Real Estate - Green Aisles - country.mp3")
+puts Song.new_by_filename("Real Estate - Green Aisles - country.mp3")
