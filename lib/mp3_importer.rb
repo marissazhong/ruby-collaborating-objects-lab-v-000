@@ -11,3 +11,5 @@ class MP3Importer
     Dir["#{@path}/*"]
   end
 end
+
+list = MP3Importer.import
