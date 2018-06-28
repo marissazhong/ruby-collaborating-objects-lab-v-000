@@ -16,7 +16,7 @@ class Artist
 #  end
 
   def save
-    self.all << self
+    @@all << self
   end
 
   def self.find_by_name(name)
