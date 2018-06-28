@@ -14,8 +14,8 @@ class Artist
 #  end
 
   def save
-    @@
-
+    
+  end
   def find_by_name(name)
     songs.detect{|song| song.name == name}
   end
@@ -31,6 +31,6 @@ class Artist
   end
 
   def add_song(song)
-    songs << song
+    Song.all << song
   end
 end
