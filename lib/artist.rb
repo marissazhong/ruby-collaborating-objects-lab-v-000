@@ -8,14 +8,9 @@ class Artist
   def self.all
     @@all
   end
-  def songs
-    Song.all
-  end
-
   def save
     @@all << self
   end
-
   def self.find_by_name(name)
     self.all.detect{|artist| artist.name == name}
   end
@@ -30,7 +25,7 @@ class Artist
   end
 
   def add_song(song)
-    Song.all << song
+    @songs << song
   end
 
   def print_songs
