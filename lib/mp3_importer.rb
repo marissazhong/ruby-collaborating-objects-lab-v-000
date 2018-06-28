@@ -2,8 +2,6 @@ class MP3Importer
   attr_accessor :path
   def initialize(path)
     @path = path
-    @filenames = []
-    #puts @path
   end
   def files
     @filenames = Dir["#{@path}/*.mp3"].map! {|file| file[@path.length+1..-1]}
