@@ -15,4 +15,4 @@ class MP3Importer
 end
 
 dir = MP3Importer.new('./db/mp3s')
-dir.import(dir)
+dir.import
