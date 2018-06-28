@@ -23,3 +23,5 @@ class Song
   end
 
 end
+
+Song.new_by_filename("Real Estate - Green Aisles - country.mp3")
